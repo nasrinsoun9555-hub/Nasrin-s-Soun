@@ -2,14 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Welcome To NASRIN SOUN</title>
 
 <style>
-
 * {
     margin: 0;
     padding: 0;
@@ -17,234 +14,158 @@
 }
 
 body {
-    background: #111;
+    background: #000;
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    min-height: 100vh;
 }
-
-/* =========================
-   WEBSITE IMAGE
-========================= */
 
 .website {
     position: relative;
-
     width: 100%;
     max-width: 1024px;
-
-    aspect-ratio: 1024 / 1536;
-
-    background-image: url("website.png");
-
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-
-    overflow: hidden;
 }
 
+.website img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
-/* =========================
-   CLICKABLE BUTTON
-========================= */
+/* Clickable Link Areas */
 
 .link {
     position: absolute;
-
-    left: 9.5%;
-    width: 79%;
-
+    left: 7%;
+    width: 86%;
+    height: 5.5%;
     display: block;
-
-    border-radius: 18px;
-
-    cursor: pointer;
-
-    transition: 0.2s;
+    z-index: 10;
 }
 
-
-/* Mouse Hover */
-
-.link:hover {
-    background: rgba(255, 255, 255, 0.08);
-
-    box-shadow:
-        0 0 20px rgba(212, 160, 60, 0.35);
-
-}
-
-
-/* =========================
-   LINK POSITIONS
-========================= */
-
-/* 1. Community */
-
+/* Community */
 .community {
-    top: 46.7%;
-    height: 6.8%;
+    top: 46.5%;
 }
 
-
-/* 2. Telegram */
-
+/* Telegram */
 .telegram {
-    top: 54.1%;
-    height: 6.8%;
+    top: 53.4%;
 }
 
-
-/* 3. Signal */
-
+/* Signal */
 .signal {
-    top: 61.6%;
-    height: 6.8%;
+    top: 60.2%;
 }
 
-
-/* 4. Learning Forex */
-
+/* Learning Forex */
 .learning {
-    top: 69.1%;
-    height: 6.8%;
+    top: 67.0%;
 }
 
-
-/* 5. Facebook */
-
+/* Facebook */
 .facebook {
-    top: 76.6%;
-    height: 6.8%;
+    top: 73.8%;
 }
 
-
-/* 6. YouTube */
-
+/* YouTube */
 .youtube {
-    top: 84%;
-    height: 6.8%;
+    top: 80.6%;
 }
-
 
 /* Mobile */
-
 @media (max-width: 600px) {
 
     .link {
-        border-radius: 12px;
+        left: 6%;
+        width: 88%;
+        height: 5.8%;
     }
 
+    .community {
+        top: 46.5%;
+    }
+
+    .telegram {
+        top: 53.4%;
+    }
+
+    .signal {
+        top: 60.2%;
+    }
+
+    .learning {
+        top: 67.0%;
+    }
+
+    .facebook {
+        top: 73.8%;
+    }
+
+    .youtube {
+        top: 80.6%;
+    }
 }
-
 </style>
-
 </head>
-
 
 <body>
 
-
 <div class="website">
 
+    <!-- Your Website Design -->
+    <img src="website.png" alt="Welcome To NASRIN SOUN">
 
-    <!-- ==================================
-         🔗 LINKS
-         👉 ប្ដូរ Link នៅទីនេះ
-    =================================== -->
-
-
-    <!-- 1. COMMUNITY -->
-
+    <!-- Community -->
     <a
         class="link community"
-
         href="https://t.me/journeywitme"
-
         target="_blank"
-
-        rel="noopener noreferrer">
-
+        aria-label="Community">
     </a>
 
-
-
-    <!-- 2. TELEGRAM -->
-
+    <!-- Telegram -->
     <a
         class="link telegram"
-
         href="https://t.me/Nasrin_Suon"
-
         target="_blank"
-
-        rel="noopener noreferrer">
-
+        aria-label="Telegram">
     </a>
 
-
-
-    <!-- 3. SIGNAL -->
-
+    <!-- Signal -->
     <a
         class="link signal"
-
         href="https://t.me/Learning_Forex_Nasrin"
-
         target="_blank"
-
-        rel="noopener noreferrer">
-
+        aria-label="Signal">
     </a>
 
-
-
-    <!-- 4. LEARNING FOREX -->
-
+    <!-- Learning Forex -->
     <a
         class="link learning"
-
         href="https://t.me/open_acc026"
-
         target="_blank"
-
-        rel="noopener noreferrer">
-
+        aria-label="Learning Forex">
     </a>
 
-
-
-    <!-- 5. FACEBOOK -->
-
+    <!-- Facebook -->
     <a
         class="link facebook"
-
         href="https://www.facebook.com/profile.php?id=61587144250978"
-
         target="_blank"
-
-        rel="noopener noreferrer">
-
+        aria-label="Facebook Page">
     </a>
 
-
-
-    <!-- 6. YOUTUBE -->
-
+    <!-- YouTube -->
     <a
         class="link youtube"
-
         href="https://www.youtube.com/@nasrinsoun4532"
-
         target="_blank"
-
-        rel="noopener noreferrer">
-
+        aria-label="YouTube">
     </a>
 
-
 </div>
-
 
 </body>
 </html>
